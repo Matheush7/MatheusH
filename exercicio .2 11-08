@@ -1,0 +1,5 @@
+<?php
+$frutas = ["maça","melão","kiwi","uva","abacaxi","mamão"];
+foreach  ($frutas as $indice => $frutas) {
+echo "fruta [$indice]: $frutas<br>";
+}
