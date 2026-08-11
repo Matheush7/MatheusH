@@ -1,0 +1,6 @@
+<?php
+$linguagem = ["php","phyton", "java", "javascrpt", "C++"];
+echo "primeira linguagem:"  . $linguagem[0]."<br>";
+echo "ultima linguagem:" . $linguagem[4]. "<br";
+$linguagem [] = "c#";
+echo "quantidade de linguagem:" . count($linguagem);
