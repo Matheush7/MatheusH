@@ -1,0 +1,20 @@
+interface Autenticavel {
+public function login(string $usuario, string $senha) : bool;   
+}
+class UsuarioComum implements 
+Autenticavel {
+public function login(string $usuario, string $senha): bool{
+ return $usuario =="user" && $senha =="123";   
+}  
+}
+class Administrador implements 
+Autenticavel {
+    public function login(string $usuario, string $senha): bool {
+return $usuario == "admin" && strlen ($senha) >= 8;
+}
+}
+$u = new UsuarioComum();
+$a = new Administrador();
+
+var_dump ($u->login("user", "123"));
+var_dump($a->login("admin", "12345678"));
