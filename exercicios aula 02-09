@@ -1,0 +1,52 @@
+class Livro {
+    public $titulo;
+    public $autor;
+    public $paginas;
+}
+$livro1 = new Livro();
+$livro1->título = "A Menina Que Roubava Livros";
+$livro1->autor = "Markus Zusak";
+$livro1->paginas = 480;
+
+$livro2 = new Livro();
+livro2->título = "Odisseia";
+$livro2->autor = "Homero";
+$livros->paginas = 320;
+echo "Livro: {$Livro1->titulo}, Autor:{$livro1->autor},Paginas:
+{livros1->paginas}\n";
+echo "Livro: {$livro2->titulo}, Autor: {$livro2->autor}, Paginas:
+{$livro2->paginas}\n";
+-------------------------------------------------------------------------------------
+class Livro {
+   public $titulo;
+   public $autor;
+   public $paginas;
+   
+   public function __construct($titulo, $autor, $paginas) {
+       $this->titulo = $titulo;
+       $this->autor = $autor;
+       $this->paginas = $paginas;
+   }
+   
+}
+$livro1 = new Livro("A Menina Que Roubava Livros", "Markus Zusak", 480);
+$livro2 = new Livro("Odisseia", "Homero", 320);
+echo "Livro: $livro1->titulo | Autor: $livro1->autor | Paginas:
+$livro1->paginas\n";
+echo "Livro: $livro2->titulo | Autor:
+$livro2->autor | Paginas:
+$livro2->paginas\n";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
