@@ -1,0 +1,5 @@
+senha = ""
+while senha != "aula123":
+    senha = input("Digite a senha ")
+
+print("Senha correta")
