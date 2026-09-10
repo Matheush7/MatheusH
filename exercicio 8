@@ -1,0 +1,4 @@
+frutas = ["abacaxi", "maça", "uva", "laranja"]
+
+for fruta in frutas:
+    print(fruta.upper())
