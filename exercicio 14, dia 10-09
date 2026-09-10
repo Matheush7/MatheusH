@@ -1,0 +1,19 @@
+nomes = [
+"Diego",   
+"Ana",
+"Pedro",
+"Jose",
+"Joao",
+"Henrique",
+"Tiago",
+"Andre",
+"Ian",
+"WIillian",
+]
+
+nome_busca = input("Digite um nome:")
+
+if busca in nomes:
+print("Nome presente na lista!")
+else:
+print("Nome não encontrado!")    
